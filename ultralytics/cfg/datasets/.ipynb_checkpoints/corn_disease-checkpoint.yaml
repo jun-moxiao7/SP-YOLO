@@ -1,0 +1,7 @@
+path: ../datasets/corn_disease
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 5
+names: ['blight', 'common_rust', 'gray_spot', 'health', 'streak_virus']
