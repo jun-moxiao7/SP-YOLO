@@ -11,8 +11,15 @@ Our systematic efficiency-improving pipeline consists of three core architectura
 * **C3k2_PConv Neck:** Introduces partial convolutions (PConv) into the first three fusion modules. By applying spatial convolution to only a subset of channels, it drastically reduces redundant spatial computation and memory access costs (MAC) during high-resolution multi-scale feature aggregation.
 * **Detect_PCDHead:** A novel PConv-based decoupled detection head that streamlines both bounding-box regression and classification processes while retaining the high localization precision of Distribution Focal Loss (DFL).
 
-### Installation
-```bash
-git clone [https://github.com/jun-moxiao7/SP-YOLO.git](https://github.com/jun-moxiao7/SP-YOLO.git)
-cd SP-YOLO
-pip install -r requirements.txt
+## ⚙️ Quick Start
+To allow users to effortlessly evaluate SP-YOLO, we provide a ready-to-use inference demo:
+
+```text
+SP-YOLO/
+├── assets/
+│   ├── img_1.jpg            # 5 sample images covering maize leaf diseases
+│   ├── img_2.jpg
+│   └── ...
+└── demo/
+    ├── best.pt              # The optimal pre-trained weights of SP-YOLO
+    └── predict_demo.py      # The inference script
