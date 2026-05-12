@@ -1,9 +1,10 @@
 # SP-YOLO: Lightweight Visual Computing Framework for Edge-Oriented Maize Leaf Disease Detection
 
-Chen, Q. (2026). Maize leaf disease dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20129619 📢 **Notice:** This repository contains the official open-source implementation, pre-trained models, and dataset guidelines for the manuscript currently submitted to ***The Visual Computer***. If you find this codebase or our structural designs helpful for your research, please consider citing our paper (see the Citation section below).
+📢 **Notice:** This repository contains the official open-source implementation, pre-trained models, and dataset guidelines for the manuscript currently submitted to ***The Visual Computer***. If you find this codebase or our structural designs helpful for your research, please consider citing our paper (see the Citation section below).
 
 ## 📖 Introduction
 **SP-YOLO** is a lightweight visual computing framework derived from YOLOv11n, explicitly tailored for edge deployment with systematic architectural optimizations. It achieves a strong efficiency-accuracy balance, reducing parameters by 52.3% and FLOPs by 56.1% compared to the baseline, while improving mAP@0.5 to 98.1%.
+Dataset DOI: https://doi.org/10.5281/zenodo.20129619
 
 ## ✨ Key Algorithmic Implementations
 Our systematic efficiency-improving pipeline consists of three core architectural innovations:
