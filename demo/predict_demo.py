@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 
 def run_inference():
-    model_path = 'weights/best.pt'
+    model_path = 'best.pt'
     sample_image_path = '../assets/streak_virus.jpg'
 
     if not os.path.exists(model_path):
