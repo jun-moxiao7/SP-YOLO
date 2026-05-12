@@ -1,0 +1,18 @@
+# SP-YOLO: Lightweight Visual Computing Framework for Edge-Oriented Maize Leaf Disease Detection
+
+Chen, Q. (2026). Maize leaf disease dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20129619 📢 **Notice:** This repository contains the official open-source implementation, pre-trained models, and dataset guidelines for the manuscript currently submitted to ***The Visual Computer***. If you find this codebase or our structural designs helpful for your research, please consider citing our paper (see the Citation section below).
+
+## 📖 Introduction
+**SP-YOLO** is a lightweight visual computing framework derived from YOLOv11n, explicitly tailored for edge deployment with systematic architectural optimizations. It achieves a strong efficiency-accuracy balance, reducing parameters by 52.3% and FLOPs by 56.1% compared to the baseline, while improving mAP@0.5 to 98.1%.
+
+## ✨ Key Algorithmic Implementations
+Our systematic efficiency-improving pipeline consists of three core architectural innovations:
+* **StarNet-based Backbone:** Replaces the standard backbone to extract compact, disease-sensitive texture features by mapping inputs into a high-dimensional, non-linear space using "star operations" (element-wise multiplication) without widening the network.
+* **C3k2_PConv Neck:** Introduces partial convolutions (PConv) into the first three fusion modules. By applying spatial convolution to only a subset of channels, it drastically reduces redundant spatial computation and memory access costs (MAC) during high-resolution multi-scale feature aggregation.
+* **Detect_PCDHead:** A novel PConv-based decoupled detection head that streamlines both bounding-box regression and classification processes while retaining the high localization precision of Distribution Focal Loss (DFL).
+
+### Installation
+```bash
+git clone [https://github.com/jun-moxiao7/SP-YOLO.git](https://github.com/jun-moxiao7/SP-YOLO.git)
+cd SP-YOLO
+pip install -r requirements.txt
