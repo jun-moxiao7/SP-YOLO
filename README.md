@@ -1,4 +1,4 @@
-# A Lightweight and Mobile-Friendly Intelligent Detection Framework for Maize Leaf Diseases
+# Lightweight visual computing framework for maize leaf disease targeting mobile devices
 
 ## 📖 Introduction
 **SP-YOLO** is a lightweight visual computing framework derived from YOLOv11n, explicitly tailored for edge deployment with systematic architectural optimizations. It achieves a strong efficiency-accuracy balance, reducing parameters by 52.3% and FLOPs by 56.1% compared to the baseline, while improving mAP@0.5 to 98.1%.
